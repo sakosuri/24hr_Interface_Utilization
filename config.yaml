@@ -1,0 +1,15 @@
+- name: "Primary_DNAC"
+    ip: "<catalyst-center-ip-address"
+    username: "<catalyst-center-username>"
+    password: "<catalyst-center-password>"
+
+targets:
+  - dna_center_name: "Primary_DNAC"
+    devices:
+      - device_ip: "<device-ip-address>"
+        interfaces:
+          - "GigabitEthernet1/0/1"
+          - "GigabitEthernet1/0/2"
+      - device_ip: "<device-ip-address>"
+        interfaces:
+          - "TenGigabitEthernet1/1/1"
